@@ -17,21 +17,22 @@ steps:
     image: lrochette/devbot:0.0.6
     working_directory: "/app/src"
     environment:
-      - JIRA_SERVER=${{JIRA_SERVER}}
-      - MIN_JIRA_TICKETS=${{MIN_JIRA_TICKETS}}
-      - MAX_JIRA_TICKETS=${{MAX_JIRA_TICKETS}}
-      - GIT_USERS_COUNT=${{GIT_USERS_COUNT}}
-      - MIN_COMMITS=${{MIN_COMMITS}}
-      - MAX_COMMITS=${{MAX_COMMITS}}
-      - JIRA_USER_EMAIL=${{JIRA_USER_EMAIL}}
-      - JIRA_TOKEN=${{JIRA_TOKEN}}
-      - GIT_USER1=${{GIT_USER1}}
-      - GIT_PAT1=${{GIT_PAT1}}
-      - GIT_USER2=${{GIT_USER2}}
-      - GIT_PAT2=${{GIT_PAT2}}
-      - GIT_USER3=${{GIT_USER3}}
-      - GIT_PAT3=${{GIT_PAT3}}
-      - GIT_USER4=${{GIT_USER4}}
-      - GIT_PAT4=${{GIT_PAT4}}
+      - LOG_LEVEL=info
+      # - JIRA_SERVER=${{JIRA_SERVER}}
+      # - MIN_JIRA_TICKETS=${{MIN_JIRA_TICKETS}}
+      # - MAX_JIRA_TICKETS=${{MAX_JIRA_TICKETS}}
+      # - GIT_USERS_COUNT=${{GIT_USERS_COUNT}}
+      # - MIN_COMMITS=${{MIN_COMMITS}}
+      # - MAX_COMMITS=${{MAX_COMMITS}}
+      # - JIRA_USER_EMAIL=${{JIRA_USER_EMAIL}}
+      # - JIRA_TOKEN=${{JIRA_TOKEN}}
+      # - GIT_USER1=${{GIT_USER1}}
+      # - GIT_PAT1=${{GIT_PAT1}}
+      # - GIT_USER2=${{GIT_USER2}}
+      # - GIT_PAT2=${{GIT_PAT2}}
+      # - GIT_USER3=${{GIT_USER3}}
+      # - GIT_PAT3=${{GIT_PAT3}}
+      # - GIT_USER4=${{GIT_USER4}}
+      # - GIT_PAT4=${{GIT_PAT4}}
     commands:
       - python main.py dev
