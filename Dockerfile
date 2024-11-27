@@ -12,6 +12,7 @@ WORKDIR /app/src
 
 # Install Git and Bash using apk package manager
 RUN apk update && apk add --no-cache git bash
+RUN apk add gcc python3-dev musl-dev linux-headers
 
 # Set Git user name and user email
 RUN git config --global user.name "DevBot"
