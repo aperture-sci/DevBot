@@ -14,7 +14,7 @@ steps:
   run:
     title: Run DevBot dev function
     type: "freestyle"
-    image: aperturesci/devbot:0.0.13
+    image: ${{ACCOUNT}}/devbot:${{VERSION}}
     working_directory: "/app/src"
     environment:
       - LOG_LEVEL=info
