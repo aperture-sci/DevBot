@@ -1,11 +1,12 @@
 import logging
 import sys
+import os
 
 from constants import DEVBOT_TASKS
 from helpers.logging_functions import handle_error
 from services.dev_bot_svc import DevBotService
 
-log_level = os.getenv('LOG_LEVEL', logging.DEBUG) 
+log_level = os.getenv('LOG_LEVEL', logging.DEBUG)
 logging.basicConfig(level=log_level.upper())  # Set logging level to DEBUG
 logger = logging.getLogger(__name__)  # Create a logger for the current module
 
