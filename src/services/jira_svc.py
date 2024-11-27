@@ -27,7 +27,7 @@ class JiraService:
 
     def _create_jira_connection(self) -> JIRA:
         self._logger.error(f"Jira server: {self._jira_data.jira_server}")
-        self._logger.error(f"Jira user: {self._jira_data.user_email}")
+        self._logger.error(f"Jira user: {self._jira_data.jira_user_email}")
         self._logger.error(f"Jira token: {self._jira_data.jira_token}")
 
         return JIRA(basic_auth=(self._jira_data.jira_user_email,
