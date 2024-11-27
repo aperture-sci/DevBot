@@ -14,7 +14,7 @@ steps:
   run:
     title: Run DevBot dev function
     type: "freestyle"
-    image: lrochette/devbot:0.0.6
+    image: aperturesci/devbot:0.0.11
     working_directory: "/app/src"
     environment:
       - LOG_LEVEL=info
