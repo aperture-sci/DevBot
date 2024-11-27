@@ -1,7 +1,7 @@
 {
   "JIRA_PROJECT": "AP",
   "JIRA_SERVER": "https://codefresh-io.atlassian.net",
-  "JIRA_USER_EMAIL" : "dan@codefresh.io",
+  "JIRA_USER_EMAIL" : "laurent_rochette@codefresh.io",
   "REPO_GIT_SERVER": "github.com",
   "REPO_ORG": "aperture-sci",
   "REPO_NAME": "trio-app",
