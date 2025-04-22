@@ -7,7 +7,7 @@ hooks:
         type: slack-post-channel:0.0.7
         arguments:
           SLACK_TOKEN: ${{LR_SLACK_TOKEN}}
-          SLACK_CHANNEL: topic-codefresh-demo
+          SLACK_CHANNEL: ${{SLACK_CHANNEL}}
           SLACK_MESSAGE: "${{CF_PIPELINE_NAME}} failed. See ${{CF_BUILD_URL}}"
 
 steps:
@@ -30,4 +30,3 @@ steps:
     commands:
       - python main.py merge_prs
     timeout: 5m
-  
