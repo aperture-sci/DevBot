@@ -35,9 +35,6 @@ class JiraService:
         user_list = []
         # Define the REST API endpoint
         endpoint = f"{self._jira_data.jira_server}/rest/api/3/project/{self._jira_data.project}/role"
-        self._logger.debug(f"Jira server: {self._jira_data.jira_server}")
-        self._logger.debug(f"Jira user: {self._jira_data.jira_user_email}")
-        self._logger.debug(f"Jira token: {self._jira_data.jira_token}")
 
         # Make GET request to fetch project role details
         response = requests.get(endpoint, auth=(self._jira_data.jira_user_email, self._jira_data.jira_token))
