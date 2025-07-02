@@ -22,4 +22,4 @@ steps:
       - GIT_USERS_COUNT=1
     commands:
       - python main.py clean_changes
-    timeout: 15m
+    timeout: 30m
