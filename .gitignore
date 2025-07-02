@@ -63,3 +63,6 @@ myenv
 *.idea/django_templates.xml
 *.idea/workspace.xdg.xml
 .idea/
+# Specific
+repo/
+secrets.env
