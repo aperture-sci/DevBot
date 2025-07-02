@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)  # Create a logger for the current module
 if __name__ == '__main__':
     try:
         if len(sys.argv) < 2 or sys.argv[1] not in DEVBOT_TASKS:
-            handle_error("Please provide an argument ('dev', 'merge_prs' or 'clean').", logger)
+            handle_error("Please provide an argument ('dev', 'merge_prs' or 'clean_changes').", logger)
         devbot = DevBotService()
         devbot.run(sys.argv[1])
     except Exception as e:
