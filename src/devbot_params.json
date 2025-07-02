@@ -2,15 +2,24 @@
   "JIRA_PROJECT": "AP",
   "JIRA_SERVER": "https://codefresh-io.atlassian.net",
   "JIRA_USER_EMAIL" : "laurent_rochette@codefresh.io",
+  "MIN_JIRA_TICKETS": 1,
+  "MAX_JIRA_TICKETS": 2,
+
   "REPO_GIT_SERVER": "github.com",
   "REPO_ORG": "aperture-sci",
   "REPO_NAME": "trio-app",
-  "MIN_JIRA_TICKETS": 1,
-  "MAX_JIRA_TICKETS": 3,
-  "GIT_USERS_COUNT": 4,
-  "GIT_CLEAN_CUTOFF": 90,
+
+  "GIT_USERS_COUNT": 2,
+  "GIT_USER1":"lrochette",
+  "GIT_EMAIL1":"laurent.rochette@codefresh.io",
+  "GIT_USER2":"francisco-cocozza",
+  "GIT_EMAIL2":"francisco@codefresh.io",
+
   "MIN_COMMITS": 1,
-  "MAX_COMMITS": 3,
+  "MAX_COMMITS": 2,
+
+  "GIT_CLEAN_CUTOFF": 90,
+
   "APP_SERVICES_COUNT": 3,
   "APP_SERVICES_LIST": ["ctrlr", "flask-ui", "buslog"]
 }

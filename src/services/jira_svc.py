@@ -35,7 +35,9 @@ class JiraService:
         user_list = []
         # Define the REST API endpoint
         endpoint = f"{self._jira_data.jira_server}/rest/api/3/project/{self._jira_data.project}/role"
-
+        # self._logger.debug(f"endpoint: {endpoint}")
+        # self._logger.debug(f"user: {self._jira_data.jira_user_email}")
+        # self._logger.debug(f"token: {self._jira_data.jira_token}")
         # Make GET request to fetch project role details
         response = requests.get(endpoint, auth=(self._jira_data.jira_user_email, self._jira_data.jira_token))
         # Check if request was successful
@@ -55,8 +57,10 @@ class JiraService:
                     else:
                         self._logger.error(f"Failed to fetch actors for role {role_name}. "
                                            f"Status code: {role_response.status_code}")
+                        
         else:
             self._logger.error(f"Failed to fetch project roles. Status code: {response.status_code}")
+            self._logger.error(f"Response content: {response.content}")
         return user_list
 
     def create_jira_tickets(self) -> List[str]:
