@@ -14,7 +14,7 @@ steps:
   run:
     title: Run DevBot dev function
     type: "freestyle"
-    image: quay.io/codefresh_sa/devbot:v0.0.6
+    image: aperturesci/devbot:v0.0.20
     working_directory: "/app/src"
     environment:
       - GIT_USERS_COUNT=${{GIT_USERS_COUNT}}
