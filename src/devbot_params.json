@@ -9,11 +9,15 @@
   "REPO_ORG": "aperture-sci",
   "REPO_NAME": "trio-app",
 
-  "GIT_USERS_COUNT": 2,
+  "GIT_USERS_COUNT": 4,
   "GIT_USER1":"lrochette",
   "GIT_EMAIL1":"laurent.rochette@codefresh.io",
   "GIT_USER2":"francisco-cocozza",
   "GIT_EMAIL2":"francisco@codefresh.io",
+  "GIT_USER3":"lrochette",
+  "GIT_EMAIL3":"laurent.rochette@codefresh.io",
+  "GIT_USER4":"kostis-codefresh",
+  "GIT_EMAIL4":"demodummy@codefresh.io",
 
   "MIN_COMMITS": 1,
   "MAX_COMMITS": 2,
