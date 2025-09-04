@@ -4,7 +4,10 @@ FROM python:3.13-alpine
 WORKDIR /app
 
 # Copy the contents of the src folder into the container
-COPY src /app/src
+COPY src/*.py src/*.json src/requirements.txt /app/src/
+COPY src/helpers /app/src/helpers
+COPY src/model /app/src/model
+COPY src/services /app/src/services
 
 # Change directory to /app/src
 WORKDIR /app/src
@@ -15,7 +18,7 @@ RUN apk add gcc python3-dev musl-dev linux-headers
 
 # Set Git user name and user email
 RUN git config --global user.name "lrochette"
-RUN git config --global user.email "laurent.rochette@codefresh.io"
+RUN git config --global user.email "laurent.rochette@octopus.com"
 
 # Install requirements from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
